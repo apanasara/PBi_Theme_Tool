@@ -1,0 +1,113 @@
+body {
+    padding: 4em;
+}
+
+#thme-form {
+    white-space: pre-wrap;
+    margin-top: 20px;
+}
+
+#fileInput {
+    position: absolute;
+    opacity: 0;
+    padding: 15px 32px;
+}
+
+.form-control {
+    display: inline-block !important;
+    width: fit-content !important;
+    min-width: 3em;
+    margin-left: 5px;
+}
+
+#logo {
+    float: left; 
+    width: fit-content; 
+}
+
+#AppTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+#AppTitle div b {
+    font-size:x-large;
+}
+
+.box-container {
+    display: flex;
+    /* Optional spacing */
+}
+
+.box {
+    flex: 1;
+    /* Adjust width dynamically */
+    margin: 20px 20px 20px 0px;
+}
+
+small {
+    font-size: 0.7em;
+}
+
+ol {
+    list-style: none;
+    counter-reset: li-counter;
+}
+
+ol li:last-child {
+    border-top: 0px !important;
+}
+
+ol li {
+    counter-increment: li-counter;
+    border-top: 2px dashed #dee2e6;
+}
+
+ol li.done {
+    border-top: solid #04AA6D;
+}
+
+ol li::before {
+    content: counter(li-counter);
+    color: #212529;
+    font-weight: bold;
+    font-size: x-large;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    margin: -25px 10px 10px -25px;
+    background-color: #dee2e6;
+}
+
+ol li.done::before {
+    background-color: #04AA6D;
+}
+
+li button {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+ol li input {
+    width: 90%;
+}
+
+#theme_form p {
+    display: none;
+}
