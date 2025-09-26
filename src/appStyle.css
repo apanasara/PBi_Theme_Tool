@@ -1,10 +1,103 @@
-body {
-    padding: 4em;
+:root {
+    --theme-green: #04AA6D;
+    --theme-white: #dee2e6;
+    --theme-dark: #212529;
 }
 
-#thme-form {
+html {
+
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    touch-action: none;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.appartment {
+    overflow: hidden;
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.floor {
+    flex: 1 0 auto;
+    padding: 1rem 2rem 0rem 2rem;
+    width: 100%;
+}
+
+.f1 {
+    position: fixed;
+    padding-top: 2rem;
+    z-index: 1000;
+    background-color: var(--theme-dark);
+}
+
+.f2 {
+    scrollbar-width: 0px;
+    position: relative;
+    margin-top: 300px;
+}
+
+
+.toolbar {
+    float: right;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: var(--theme-green);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--theme-green);
+    color: var(--theme-white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -55%;
+    right: 130%;
+    margin-left: -60px;
+    font: caption;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 99%;
+    margin-top: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--theme-green);
+}
+
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+}
+
+#theme_form {
     white-space: pre-wrap;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 #fileInput {
@@ -21,11 +114,11 @@ body {
 }
 
 #logo {
-    float: left; 
-    width: fit-content; 
+    float: left;
+    width: fit-content;
 }
 
-#AppTitle{
+#AppTitle {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -34,7 +127,7 @@ body {
 }
 
 #AppTitle div b {
-    font-size:x-large;
+    font-size: x-large;
 }
 
 .box-container {
@@ -63,16 +156,16 @@ ol li:last-child {
 
 ol li {
     counter-increment: li-counter;
-    border-top: 2px dashed #dee2e6;
+    border-top: 2px dashed var(--theme-white);
 }
 
 ol li.done {
-    border-top: solid #04AA6D;
+    border-top: solid var(--theme-green);
 }
 
 ol li::before {
     content: counter(li-counter);
-    color: #212529;
+    color: var(--theme-dark);
     font-weight: bold;
     font-size: x-large;
     width: 50px;
@@ -83,15 +176,15 @@ ol li::before {
     text-align: center;
     padding: 3px;
     margin: -25px 10px 10px -25px;
-    background-color: #dee2e6;
+    background-color: var(--theme-white);
 }
 
 ol li.done::before {
-    background-color: #04AA6D;
+    background-color: var(--theme-green);
 }
 
 li button {
-    background-color: #04AA6D;
+    background-color: var(--theme-green);
     border: none;
     border-radius: 5px;
     color: white;

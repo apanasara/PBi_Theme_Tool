@@ -33,8 +33,8 @@ async function saveFile(filename, content) {
 
 /*-------------------- Share button ---------------------------------*/
 /// what is file array
-async function shareJson(jsonData, shareTitle, shareText) {
-  let jSonString = JSON.stringify(jsonData, null, 2);
+async function shareJson(jSonString, shareTitle, shareText) {
+  
   let opt = { type: 'text/plain' };
   const jsonBlob = new Blob([jSonString], opt);
   const file = new File([jsonBlob], 'theme_json.txt', opt);
@@ -123,7 +123,7 @@ var initJsoneditor = function () {
 
 /*------------------- after form rendering completion------------------------*/
 function PostSchemaFormRender() {
-  outputSection.style.display = 'block';
+  HideUnhideArea.style.display = 'block';
 
   let shcemaField = editor.getEditor('root.$schema');
   shcemaField.setValue(`${document.getElementById('urlInput').value}`);
@@ -179,4 +179,36 @@ function CompletedStages(stageNo) {
       }
     }
   }
+}
+
+/*---------------------- App Refresh ------------------------------*/
+async function HardRefresh() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      registrations.forEach((registration) => {
+        registration.unregister();
+      });
+      // Clear caches
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => caches.delete(cacheName))
+        );
+      }).then(() => {
+        // Reload the page
+        location.reload(true);
+        alert("Tool is updated.");
+      });
+    });
+  }
+}
+
+/*--------------- App Installation ----------------------*/
+async function PwaInstallation(e) {
+  const isInstalledPWA = window.matchMedia('(display-mode: window-controls-overlay)').matches ||
+                       window.matchMedia('(display-mode: standalone)').matches;
+
+  if(!isInstalledPWA){
+    e.prompt();
+  }
+  
 }

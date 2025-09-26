@@ -1,6 +1,6 @@
 var container = document.getElementById('theme_form');
-var outputSection = document.getElementById('output-section');
-outputSection.style.display = 'none';
+var HideUnhideArea = document.getElementsByClassName('f2').item(0);
+HideUnhideArea.style.display = 'none';
 
 var baseTheme = {};
 
