@@ -4,7 +4,7 @@
   "short_name": "ThemeBuilder",
   "description": "App that builds/edits the power bi theme file based on user feed & it sticks to schema guide line by Microsoft.",
   "scope": "/",
-  "start_url": "../index.html",
+  "start_url": "/index.html",
   "display": "minimal-ui",
   "display_override": [
     "window-controls-overlay",
