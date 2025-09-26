@@ -1,0 +1,5 @@
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=fdgjcpindpafaaffghhoglbcbnkcheia --app-url=https://localhost:3000/ --app-launch-source=4
+
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=jlcipjlinimjfdflchmjeljiiendeoaf --app-url=https://apanasara.github.io/PBi_Theme_Tool/src/index.html --app-launch-source=4
+
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=mjoklplbddabcmpepnokjaffbmgbkkgg --app-url=https://github.com/ --app-launch-source=4

@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.https": {
+
+        "enable": true,
+        "cert": "c:\\Users\\APan01\\OneDrive - ABC Fitness Solutions, LLC\\Documents\\Power bi Theme Builder\\certs\\127.0.0.1+1.pem",
+        "key": "c:\\Users\\APan01\\OneDrive - ABC Fitness Solutions, LLC\\Documents\\Power bi Theme Builder\\certs\\127.0.0.1+1-key.pem",
+        "rejectUnauthorized": false
+    },
+    "liveServer.settings.port": 3000
+}

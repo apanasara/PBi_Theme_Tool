@@ -1,0 +1,42 @@
+{
+  "name": "Build / Edit - PBI Theme",
+  "id": "khcnjfcebhepclkofdgdonebkaiiggno",
+  "short_name": "ThemeBuilder",
+  "description": "App that builds/edits the Power BI theme file based on user input & it sticks to schema guideline by Microsoft.",
+  "scope": "/",
+  "start_url": "../index.html",
+  "display": "minimal-ui",
+  "display_override": [
+    "window-controls-overlay",
+    "minimal-ui",
+    "standalone"
+  ],
+  "background_color": "#212529",
+  "theme_color": "#04AA6D",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "landscape-primary",
+  "icons": [
+    {
+      "src": "../asset/PBiThemeBuilder.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://apanasara.github.io/PBi_Theme_Tool/src/manifest.json"
+    },
+    {
+      "platform": "windows",
+      "id": "9NTXR16HNW1T",
+      "url": "https://apps.microsoft.com/detail/9NTXR16HNW1T"
+    }
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "navigate-new"
+  },
+  "handle_links": "non-preferred"
+}
