@@ -27,7 +27,7 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://apanasara.github.io/PBi_Theme_Tool/src/index.html"
+      "url": "https://apanasara.github.io/PBi_Theme_Tool/src/manifest.json"
     },
     {
       "platform": "windows",
