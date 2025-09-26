@@ -3,9 +3,9 @@ self.addEventListener('install', event => {
     caches.open('theme-builder-cache').then(cache => {
       return cache.addAll([
         './',
-        './index.html',
-        './src/manifest.json',
-        './asset/PBiThemeBuilder.png',
+        '../index.html',
+        './manifest.json',
+        '../asset/PBiThemeBuilder.png',
         'https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/refs/heads/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.114.json'
       ]);
     }).catch(error => {
