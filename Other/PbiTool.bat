@@ -1,1 +1,0 @@
-start msedge --kiosk --start-fullscreen --inprivate --disable-web-security --app="file:///C:/Users/APan01/OneDrive - ABC Fitness Solutions, LLC/Documents/Power bi Theme Builder/Index.html" 
