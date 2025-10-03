@@ -2,52 +2,11 @@
 
 
 // ------- Installation of Power BI desktop External tool
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-    console.log('beforeinstallprompt FIRED');
-    e.preventDefault();
-    deferredPrompt = e;
-});
-
 document.getElementById('Installer').addEventListener('click', async () => {
-
-
-    const relatedApps = await navigator.getInstalledRelatedApps();
-
-    // Dump all the returned related apps into a table in the console
-    console.table(relatedApps);
-
-    // Search for a specific installed platform-specific app
-    const psApp = relatedApps.find((app) => app.url === "https://apanasara.github.io/PBi_Theme_Tool/src/index.html");
-
-    if (psApp) {
-        // There's an installed platform-specific app that handles sending push messages
-        alert('This feature is under development.');
-        return;
-    }
-
-    if (psApp && doesVersionSendPushMessages(psApp.version)) {
-        // There's an installed platform-specific app that handles sending push messages
-        console.log('installed there');
-        return;
-    }
-
-
-    const isInstalledPWA = window.matchMedia('(display-mode: window-controls-overlay)').matches ||
-        window.matchMedia('(display-mode: standalone)').matches;
-
-    if (!isInstalledPWA) {
-        if (deferredPrompt !== null) {
-            //deferredPrompt.prompt();
-            // const { outcome } = await deferredPrompt.userChoice;
-            // if (outcome === 'accepted') {
-            //     deferredPrompt = null;
-            // }
-        }
-    } else {
-        console.log('installed already');
-    }
-
+    alert('This functionality is not available in the web version. \n If desktop app is installed, please access this functionality from there.');
+    const response = await fetch('../asset/PBiThemeTool.pbitool.json');
+    let pbiTool = await response.json();
+    window.parent.postMessage({data:pbiTool}, '*'); //window.location.origin
 });
 
 // ------------ Hard Refresh App
