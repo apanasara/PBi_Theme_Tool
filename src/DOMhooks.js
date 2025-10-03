@@ -4,7 +4,7 @@
 // ------- Installation of Power BI desktop External tool
 document.getElementById('Installer').addEventListener('click', async () => {
     alert('This functionality is not available in the web version. \n If desktop app is installed, please access this functionality from there.');
-    const response = await fetch('../asset/PBiThemeTool.pbitool.json');
+    const response = await fetch('./asset/PBiThemeTool.pbitool.json');
     let pbiTool = await response.json();
     window.parent.postMessage({data:'Installer', tool:pbiTool}, '*'); //window.location.origin
 });
