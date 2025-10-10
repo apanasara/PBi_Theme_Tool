@@ -6,4 +6,5 @@ You can also install External tool into Power Bi Desktop Application running Ins
 
 <img width="585" height="188" alt="image" src="https://github.com/user-attachments/assets/9b2ed831-bdf9-471d-bf13-d3324c48bea9" />
 
-Note: If you are using Windows VM, then paste script directly into Power Shell (Admin) instead of calling *.ps1 file.
+> [!IMPORTANT]
+> If you are using Windows VM, then paste script directly into Power Shell (Admin) instead of calling *.ps1 file.
