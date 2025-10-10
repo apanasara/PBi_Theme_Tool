@@ -7,12 +7,12 @@ Deliver professional, consistent Power BI dashboards with granular theme control
 ## ✨ Key Importance & Features
 
 ### 1️⃣ **Visual-Level Appearance Control**
-- 🖌️ Easily customize **chart visuals**: Set default marker size for line charts 📈, border radius for column charts 📊, etc.
+- 🖌️ Easily customize **chart visuals**: for example, Set default marker size for line charts 📈, border radius for column charts 📊, etc.
 - 🎯 Achieve precise brand and analytic consistency for every chart.
 
 ### 2️⃣ **Consistent UI for Client Reports**
 - 📋 Generate **multiple reports** with the same UI for any client in seconds.
-- 🚦 No more repetitive manual formatting for each dashboard.
+- 🚦 No more repetitive manual formatting for each visual/dashboard.
 
 ### 3️⃣ **Effortless Self-Service Dashboards**
 - 🏗️ Clients can **build tables and visuals**—themes apply automatically.
@@ -32,7 +32,7 @@ Deliver professional, consistent Power BI dashboards with granular theme control
 
 Preview of tool : [Demo link](https://apanasara.github.io/PBi_Theme_Tool/)
 
-This is a PWA(Progressive-Web-App) for creating new theme file for Power BI Report. Also, you can edit existing theme file.
+> This is a PWA(Progressive-Web-App) for creating new theme file for Power BI Report. Also, you can edit existing theme file.
 
 ## Installation
 
