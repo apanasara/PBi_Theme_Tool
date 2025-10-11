@@ -43,3 +43,6 @@ You can also install External tool into Power Bi Desktop Application running Ins
 
 > [!IMPORTANT]
 > If you are using Windows VM, then paste script directly into Power Shell (Admin) instead of calling *.ps1 file.
+
+[![Installation Video Link](https://img.youtube.com/vi/I8AdHiuaflg/0.jpg)](https://youtu.be/I8AdHiuaflg)
+
